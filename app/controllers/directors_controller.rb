@@ -1,4 +1,4 @@
-class CreateDirectorsController < ApplicationController
+class DirectorsController < ApplicationController
   def show
   end
 
