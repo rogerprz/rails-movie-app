@@ -1,0 +1,26 @@
+        <h2>Edit user</h2>
+        <%= form_for @movie do |f| %>
+          <p>
+            <%= f.label :title %><br>
+            <%= f.text_field :title %>
+          </p>
+          <p>
+            <%= f.label :director %><br>
+            <%= f.text_area :director %>
+          </p>
+           <p>
+            <%= f.label :facebook_likes %><br>
+            <%= f.text_area :facebook_likes %>
+          </p>
+           <p>
+            <%= f.label :year %><br>
+            <%= f.text_area :year %>
+          </p>
+           <p>
+            <%= f.label :plot_keywords%><br>
+            <%= f.text_area :plot_keywords%>
+          </p>
+          <p>
+            <%= f.submit %>
+          </p>
+        <% end %>
