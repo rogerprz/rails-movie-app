@@ -6,9 +6,14 @@ class MoviesSystemTest < ApplicationSystemTestCase
     assert_text "Bong Joon-ha"
   end
 
-  test "visit the show page" do
+  test "visit the second show page" do
     visit '/movies/2'
     assert_text "Titanic"
     assert_text "James Cameron"
+  end
+
+  test "movie is not valid without a title" do
+    visit("/movies")
+    assert_equal(Movie.all.size,2)
   end
 end
